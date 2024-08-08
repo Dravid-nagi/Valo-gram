@@ -12,7 +12,16 @@
     <h2>Games</h2>
     <ul>
         {% for game in user.games %}
-        <li>{{ game }}</li>
+        <li>
+            {{ game }}
+            {% if game in game_images %}
+            <div>
+                <img src="{{ url_for('static', filename=game_images[game].split('/')[-1]) }}" alt="{{ game }}" style="width: 512px; height: auto;">
+            </div>
+            {% else %}
+            <p>Image could not be generated.</p>
+            {% endif %}
+        </li>
         {% endfor %}
     </ul>
     <h2>Add New Game</h2>
