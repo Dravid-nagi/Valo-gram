@@ -29,7 +29,7 @@ users = {
 }
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-API_KEY = "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"
+API_KEY = "your api key here"
 
 def generate_image_for_game(game_name):
     payload = {
