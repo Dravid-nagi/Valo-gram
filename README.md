@@ -8,22 +8,10 @@ Please access CSS Masters folder for Submission.
 
 Please access CSS Masters folder for Submission.
 
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
-
-Please access CSS Masters folder for Submission.
+<img src = "img1.png" />
 
 
+<img src = "img2.png" />
 
 
 Complete project description :
