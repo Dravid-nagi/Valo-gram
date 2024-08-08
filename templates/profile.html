@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ user.username }}'s Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>{{ user.username }}'s Profile</h1>
+    <p>{{ user.bio }}</p>
+    <h2>Games</h2>
+    <ul>
+        {% for game in user.games %}
+        <li>{{ game }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Add New Game</h2>
+    <form action="{{ url_for('add_content') }}" method="post">
+        <input type="hidden" name="username" value="{{ user.username }}">
+        <input type="text" name="new_game" required>
+        <button type="submit">Add</button>
+    </form>
+    <h2>Social Links</h2>
+    <ul>
+        {% for platform, link in user.social_links.items() %}
+        <li><a href="{{ link }}">{{ platform }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
